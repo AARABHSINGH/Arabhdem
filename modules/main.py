@@ -26,12 +26,12 @@ bot = Client(
     "bot",
     api_id=26910519,
     api_hash= "0b14672454a94495a50c9381ba107e30",
-    bot_token= "7426196910:AAEj2BEiNLED-pPWsulRPZpgJR4_4O5O6X8")
+    bot_token= "7543769053:AAEBQoJY0XWGl1gr1EkUDq_IMpJ82h4GWJI")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /txt Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** GURJAR\n")
+    editable = await m.reply_text("Hi!\n\nGive /GURJAR Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** MASOOM GURJAR\n")
 
 
 @bot.on_message(filters.command("stop"))
