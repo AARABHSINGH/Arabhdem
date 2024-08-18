@@ -30,8 +30,8 @@ bot = Client(
 
 
 @bot.on_message(filters.command(["start"]))
-async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /txt Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** GURJAR\n")
+async def account_login(bot: Client, m: Message): 
+    editable = await m.reply_text("Hi!\n\nGive /GURJAR Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :**MASOOM GURJAR\n")
 
 
 @bot.on_message(filters.command("stop"))
@@ -48,6 +48,9 @@ async def account_login(bot: Client, m: Message):
     x = await input.download()
     await bot.send_document(-1002148302049, x)
     await input.delete(True)
+    file_name, ext = os.path.splitext(os.path.basename(x))
+        credit = "GURJAR"
+
 
     path = f"./downloads/{m.chat.id}"
 
