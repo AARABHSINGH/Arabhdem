@@ -24,14 +24,14 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 bot = Client(
     "bot",
-    api_id=__,
-    api_hash= "__",
-    bot_token= "__")
+    api_id=28466214,
+    api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
+    bot_token= "7387350757:AAEH1MPoCXtPD5gZhG7hl4J-fcRqxxZN_c0")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /GURJAR Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** FRIEND\n")
+    editable = await m.reply_text("Hi!\n\nGive /TXT Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** 𝐌𝐄𝐋𝐕𝐈𝐍\n")
 
 
 @bot.on_message(filters.command("stop"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["GURJAR"]))
+@bot.on_message(filters.command(["TXT"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
     input: Message = await bot.listen(editable.chat.id)
@@ -182,8 +182,8 @@ async def account_login(bot: Client, m: Message):
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             try:
                 
-                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name} {res} [FRIEND].mkv\n**Batch »** {raw_text0}\n\n**Download by »** **{raw_text3}**\n\n'
-                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} [FRIEND].pdf \n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
+                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name} {res} [𝐌𝐄𝐋𝐕𝐈𝐍].mkv\n**Batch »** {raw_text0}\n\n**Download by »** **{raw_text3}**\n\n'
+                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} [𝐌𝐄𝐋𝐕𝐈𝐍].pdf \n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -209,7 +209,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ Downloading »**\n\n**Name »** `{name}\nQuality » {raw_text2}`\n\n**Url »** `{url}`\n\n**Bot By ➤ **FRIEND"
+                    Show = f"**⥥ Downloading »**\n\n**Name »** `{name}\nQuality » {raw_text2}` \n\n**Bot By ➤ **𝐌𝐄𝐋𝐕𝐈𝐍"
                
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
