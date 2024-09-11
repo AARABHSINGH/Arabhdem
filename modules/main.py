@@ -26,12 +26,12 @@ bot = Client(
     "bot",
     api_id=28466214,
     api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
-    bot_token= "7299755197:AAEzzUuRSR2fGFrvaF1wjahmWM2kOdI9HW0")
+    bot_token= "7444012418:AAHjUMn8yWT-7SYFFRGnpT53uZnYrMSkB40")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /TXT Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** [𝐌𝐄𝐋𝐕𝐈𝐍]\n")
+    editable = await m.reply_text("Hi!\n\nGive /TXT Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** 𝐌𝐄𝐋𝐕𝐈𝐍\n")
 
 
 @bot.on_message(filters.command("stop"))
@@ -47,7 +47,7 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
        x = await input.download()
-       await bot.send_document(-1002304801509, x)
+       await bot.send_document(-1002222484556, x)
        await input.delete(True)
        file_name, ext = os.path.splitext(os.path.basename(x))
        credit = "MELVIN"
