@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /TXT Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** 𝐌𝐄𝐋𝐕𝐈𝐍\n")
+    editable = await m.reply_text("Hi!\n\nGive /TXT Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** 𝐌𝐄𝐋𝐕𝐈𝐍[🇮🇳]\n")
 
 
 @bot.on_message(filters.command("stop"))
@@ -182,8 +182,8 @@ async def account_login(bot: Client, m: Message):
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             try:
                 
-                cc = f'** {str(count).zfill(3)}.**{name} {res}[𝐌𝐄𝐋𝐕𝐈𝐍].mkv\n\n**BATCH NAME : ** {raw_text0}\n\n**EXTRACTED  BY ➤** {raw_text3}\n\n'
-                cc1 = f'**{str(count).zfill(3)}.**{name} [𝐌𝐄𝐋𝐕𝐈𝐍].pdf\n\n**BATCH NAME : ** {raw_text0}\n\n**EXTRACTED  BY ➤** {raw_text3}\n\n'
+                cc = f'** {str(count).zfill(3)}.**{name} {res}[𝐌𝐄𝐋𝐕𝐈𝐍🇮🇳].mkv\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤** {raw_text3}\n\n'
+                cc1 = f'**{str(count).zfill(3)}.**{name} [𝐌𝐄𝐋𝐕𝐈𝐍🇮🇳].pdf\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
