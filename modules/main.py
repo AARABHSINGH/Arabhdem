@@ -26,7 +26,7 @@ bot = Client(
     "bot",
     api_id=28466214,
     api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
-    bot_token= "7444012418:AAHjUMn8yWT-7SYFFRGnpT53uZnYrMSkB40")
+    bot_token= "7387562785:AAEZdm4ruxYvgWXc8p_18gElnva2OnD1mac")
 
 
 @bot.on_message(filters.command(["start"]))
@@ -47,7 +47,7 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
        x = await input.download()
-       await bot.send_document(-1002222484556, x)
+       await bot.send_document(-1002179528570, x)
        await input.delete(True)
        file_name, ext = os.path.splitext(os.path.basename(x))
        credit = "MEDARN"
@@ -183,8 +183,8 @@ async def account_login(bot: Client, m: Message):
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             try:
                 
-                cc = f'**[🎬] Vid_ID : {str(count).zfill(3)}**\n**Tital : ** {name} {res}[𝐌𝐄𝐋𝐕𝐈𝐍].mkv\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
-                cc1 = f'**[📕] Pdf_ID : {str(count).zfill(3)}**\n**Tital : ** {name} [𝐌𝐄𝐋𝐕𝐈𝐍].pdf\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
+                cc = f'** {str(count).zfill(3)}. ** {name} {res}[𝐌𝐄𝐋𝐕𝐈𝐍].mkv\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
+                cc1 = f'** {str(count).zfill(3)}. ** {name} [𝐌𝐄𝐋𝐕𝐈𝐍].pdf\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
