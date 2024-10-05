@@ -24,8 +24,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 bot = Client(
     "bot",
-    api_id=28466214,
-    api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
+    api_id=21546895,
+    api_hash= "3fbb1254728cf2ab3447a0e9e7aa6fc0",
     bot_token= "7537819246:AAHjEXDODtoE1KIrxIwVBNbZO_gfByWDlrE")
 
 
@@ -179,8 +179,8 @@ async def account_login(bot: Client, m: Message):
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             try:
                 
-                cc = f'** {str(count).zfill(3)}. ** {name} {res}.mkv\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
-                cc1 = f'** {str(count).zfill(3)}. ** {name} .pdf\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
+                cc = f'** {str(count).zfill(3)}. ** {name} {res}.mkv\n\n**Batch Name : ** {raw_text0}\n\n**Downloaded  By ➤  {raw_text3}**\n\n'
+                cc1 = f'** {str(count).zfill(3)}. ** {name} .pdf\n\n**Batch Name : ** {raw_text0}\n\n**Downloaded By ➤  {raw_text3}**\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
