@@ -26,7 +26,7 @@ bot = Client(
     "bot",
     api_id=21546895,
     api_hash= "3fbb1254728cf2ab3447a0e9e7aa6fc0",
-    bot_token= "8126756346:AAEXK0MQQu-pAll5em1c1dULSmXdYYrCOSs")
+    bot_token= "7537819246:AAHjEXDODtoE1KIrxIwVBNbZO_gfByWDlrE")
 
 
 @bot.on_message(filters.command(["start"]))
@@ -179,8 +179,8 @@ async def account_login(bot: Client, m: Message):
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             try:
                 
-                cc = f'**[🎬] Vid_ID: {str(count).zfill(3)}\nTitle ** {name} {res}[𝐌𝐄𝐋𝐕𝐈𝐍].mkv\n\n**Batch Name : ** {raw_text0}\n\n**Extracted  By ➤  {raw_text3}**\n\n'
-                cc1 = f'**[📕] Pdf_ID: {str(count).zfill(3)} \nTitle ** {name} [𝐌𝐄𝐋𝐕𝐈𝐍].pdf\n\n**Batch Name : ** {raw_text0}\n\n**Extracted By ➤  {raw_text3}**\n\n'
+                cc = f'** {str(count).zfill(3)} ** {name} {res}.mkv\n\n**Batch Name : ** {raw_text0}\n\n**Downloaded  By ➤  {raw_text3}**\n\n'
+                cc1 = f'** {str(count).zfill(3)}  ** {name} .pdf\n\n**Batch Name : ** {raw_text0}\n\n**Downloaded By ➤  {raw_text3}**\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
