@@ -26,7 +26,7 @@ bot = Client(
     "bot",
     api_id=21546895,
     api_hash= "3fbb1254728cf2ab3447a0e9e7aa6fc0",
-    bot_token= "7537819246:AAHjEXDODtoE1KIrxIwVBNbZO_gfByWDlrE")
+    bot_token= "7878988123:AAHfTkE9bwf8afvIsUG8JMLBu2-aU_4rleo")
 
 
 @bot.on_message(filters.command(["start"]))
@@ -47,7 +47,9 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
        x = await input.download()
+       await input.delete(True)
 
+        
         
        path = f"./downloads/{m.chat.id}"
        try:
