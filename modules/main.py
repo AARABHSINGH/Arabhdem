@@ -24,9 +24,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 bot = Client(
     "bot",
-    api_id=21546895,
-    api_hash= "3fbb1254728cf2ab3447a0e9e7aa6fc0",
-    bot_token= "7878988123:AAHfTkE9bwf8afvIsUG8JMLBu2-aU_4rleo")
+    api_id=28466214,
+    api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
+    bot_token= "7527344410:AAFWR5lW9V2fFJUK9-jB9v8ZLdjWv1CQIpc")
 
 
 @bot.on_message(filters.command(["start"]))
