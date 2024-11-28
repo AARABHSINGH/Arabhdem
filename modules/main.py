@@ -26,12 +26,12 @@ bot = Client(
     "bot",
     api_id=28466214,
     api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
-    bot_token= "7399470848:AAFvukHo_PHnHa5fhAQEpMEHfzLnLbtbMIg")
+    bot_token= "7717557061:AAGs08veHXPJ17JGkSC1AS8s6oyOPzxr_ig")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /melvin Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** 𝐌𝐄𝐋𝐕𝐈𝐍[🇮🇳]\n")
+    editable = await m.reply_text("Hi!\n\nGive /MASOOM Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** MASOOM\n")
 
 
 @bot.on_message(filters.command("stop"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["melvin"]))
+@bot.on_message(filters.command(["MASOOM"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
     input: Message = await bot.listen(editable.chat.id)
@@ -180,8 +180,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
             try:
-                cc = f'** {str(count).zfill(3)}. **{name} {res} [MELVIN].mkv\n\n**Batch Name : **{raw_text0}\n\n**Extrected  By ➤ {raw_text3}\n\n**'
-                cc1 = f'** {str(count).zfill(3)}. **{name} [MELVIN].pdf\n\n**Batch Name : **{raw_text0}\n\n**Extracted  By ➤ {raw_text3}\n\n**'
+                cc = f'** {str(count).zfill(3)}. **{name} {res} [MASOOM].mkv\n\n**Batch Name : **{raw_text0}\n\n**Extrected  By ➤ {raw_text3}\n\n**'
+                cc1 = f'** {str(count).zfill(3)}. **{name} [MASOOM].pdf\n\n**Batch Name : **{raw_text0}\n\n**Extracted  By ➤ {raw_text3}\n\n**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -207,7 +207,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ Downloading »**\n\n**Name »** `{name}\nQuality » {raw_text2}` \n\n**Bot By ➤ **𝐌𝐄𝐋𝐕𝐈𝐍 [🇮🇳]"
+                    Show = f"**⥥ Downloading ➤**\n\n**Name ➤** `{name}\nQuality ➤ {raw_text2}` \n\n**Bot By ➤ **MASOOM GURJAR"
                
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
@@ -219,7 +219,7 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading Interupted **\n{str(e)}\n**Name** » {name}\n**Link** » {url}"
+                    f"**downloading Interupted **\n{str(e)}\n**Name** ➤ {name}\n**Link** ➤ {url}"
                 )
                 continue
 
