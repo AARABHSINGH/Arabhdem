@@ -26,12 +26,12 @@ bot = Client(
     "bot",
     api_id=28466214,
     api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
-    bot_token= "7717557061:AAGs08veHXPJ17JGkSC1AS8s6oyOPzxr_ig")
+    bot_token= "7047147803:AAHT_DXSKEetnD2lA7MprHiBhQXi6XgBYas")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /MASOOM Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** MASOOM\n")
+    editable = await m.reply_text("Hi!\n\nGive /MASOOM Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** MASOOM GURJAR\n")
 
 
 @bot.on_message(filters.command("stop"))
