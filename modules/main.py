@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /MASOOM Command to Downlaod From a Text file.\n\n**𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :** @MASOOMGURJARTG\n")
+    editable = await m.reply_text("Hi!\n\nGive /MASOOM Command to Downlaod From a Text file.\n\n𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 :**@MASOOMGURJARTG\n")
 
 
 @bot.on_message(filters.command("stop"))
